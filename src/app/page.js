@@ -1,41 +1,21 @@
 "use client";
 import React from "react";
-import Stars from "./components/Stars/Stars.jsx";
-import Nav from "./components/Nav/Nav.jsx";
-import About from "./components/About/About.jsx";
-import Work from "./components/Work/Work.jsx";
-import Jukebox from "./components/jukebox/Jukebox.jsx";
-import Moon from "./components/Moon/Moon.jsx";
+import Nav from "./components/Nav/Nav";
 
 export default function Home() {
   return (
     <>
-      <div className="absolute top-0 w-full z-50 sticky">
-        <Nav />
-      </div>
-
-      <div id="landing" className="relative" style={{ marginTop: "-4rem" }}> {/* Adjust the negative margin to match the height of your nav */}
-        <div className="star-bg absolute star-container">
-          <Stars />
+      <div className="relative">
+        <div className="absolute top-0 w-full z-50">
+          <Nav />
         </div>
-        <div className="font-semibold text-white flex flex-col items-center justify-center h-svh text-center relative z-10">
-          <Moon />
-        </div>
-      </div>
 
-      <div id="about" className="bg-DarkBG">
-        <div>
-          <About />
+        <div id="landing" className="relative" style={{ marginTop: "-.1rem" }}> {/* Adjust the negative margin to match the height of your nav */}
+          <main className="flex h-screen justify-center items-center">
+            <h1 className="text-center text-white">Welcome GetRaw Martial Arts!</h1>
+          </main>
         </div>
       </div>
-
-      <div id="work" className="bg-blue-600">
-        <div>
-          <Work />
-        </div>
-      </div>
-
-      <Jukebox />
     </>
   );
 }

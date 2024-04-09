@@ -2,93 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: 'Minecraft World4Play.com';
   src: url('../../public/fonts/minecraft-font/MinecraftRegular-Bmg3.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 * {
   font-family: 'Minecraft World4Play.com', sans-serif;
 }
 
 html {
+  margin: 0;
+  padding: 0;
   /* height: 100vh; */
   /* background-image: radial-gradient(circle, #2f0053, #22084b, #170c41, #100c37, #0c0a2c, #0a0926, #080720, #05061a, #060718, #060815, #080912, #090a0f); */
-  background-color: #05061a;
+  /* background-color: ; */
 }
-
-.height {
-  height: 100svh;
-}
-
-.hire-me {
-  background-color: transparent;
-  color: #FFFFFF;
-  text-align: center;
-  transition: all 0.5s;
-}
-
-.star-field {
-  position: fixed;
-  z-index: -1;
-}
-
-.star {
-  position: absolute;
-  transition: opacity 2s alternate;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-  transform-origin: center;
-}
-
-.star.twinkle {
-  animation: twinkle 2s infinite alternate;
-}
-
-@keyframes twinkle {
-  0% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#moon {
-  box-shadow: 0 0 300em rgba(255, 255, 255, 0.4);
-}
-
-
-  /* Special styling for WebKit/Blink */
-#volume[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 10px;
-  background: #272727;
-  cursor: pointer;
-  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
-}
-
-
-
-
-
-
-#volume[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #a1a1a2;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
-}
-
-
-
 
 .hide {
   opacity: 0;
@@ -109,28 +40,33 @@ html {
   overflow: hidden;
 }
 
-.card:hover .overlay {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  transform: translateY(0);
+
+#landing {
+  position: relative;
+  height: 100vh;
 }
 
-.overlay {
+#landing::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(100%);
-  transition: background 0.3s, backdrop-filter 0.3s, transform 0.3s;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/hero.jpg'); /* Replace 'hero.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Adjust the blur amount as needed */
+  z-index: -1; /* Ensure the pseudo-element stays behind the content */
 }
 
-.overlay-text {
-  color: #000;
-  font-weight: bold;
+#landing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the color and opacity as needed */
+  z-index: -1; /* Ensure the pseudo-element stays behind the content */
 }

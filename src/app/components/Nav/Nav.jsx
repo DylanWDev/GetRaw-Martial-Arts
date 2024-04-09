@@ -14,75 +14,24 @@ const Nav = () => {
   const isCurrentPage = (href) => currentPath === href;
 
   return (
-    <Popover className="nav container text-white mx-auto flex items-center px-6 py-2 h-20 sticky top-0 z-50">
-      <Link
-        to="landing"
-        className={`font-bold text-lg relative w-fit block transition ease-in-out hover:text-violet-600 cursor-pointer after:block after:content-[''] after:absolute after:h-[3px] after:bg-violet-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
-          isCurrentPage("#about") ? "text-violet-600" : ""
-        }`}
-        smooth={true}
-        duration={500}
-      >
-        DylanWDev
-      </Link>
-      <div className="grow">
-        <div className="hidden text-lg sm:flex items-center justify-end gap-5">
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            className={`relative w-fit block transition ease-in-out hover:text-violet-600 cursor-pointer after:block after:content-[''] after:absolute after:h-[3px] after:bg-violet-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
-              isCurrentPage("#about") ? "text-violet-600" : ""
-            }`}
-          >
-            About
-            <span
-              className={`absolute block after:block after:content-[''] after:absolute after:h-[3px] after:bg-violet-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
-                isCurrentPage("#about") ? "scale-x-100" : ""
-              }`}
-            ></span>
-          </Link>
+    <Popover className="nav container text-black mx-auto flex items-center px-6 py-2 h-20 sticky top-0 z-50">
+      <a href="/" className="size-20">
+        <img src="/images/logo.png"/>
+      </a>
 
-          <Link
-            to="work"
-            smooth={true}
-            duration={500}
-            className={`relative w-fit block transition ease-in-out hover:text-violet-600 cursor-pointer after:block after:content-[''] after:absolute after:h-[3px] after:bg-violet-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
-              isCurrentPage("#work") ? "text-violet-600" : ""
-            }`}
-          >
-            Work
-            <span
-              className={`absolute block after:block after:content-[''] after:absolute after:h-[3px] after:bg-violet-600 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${
-                isCurrentPage("#work") ? "scale-x-100" : ""
-              }`}
-            ></span>
-          </Link>
-          <button
-            onClick={() => scroll.scrollToBottom()}
-            className="hire-me flex rounded-lg transition hover:bg-violet-600 text-white font-semibold py-2 px-4 border border-gray-400  shadow"
-          >
-            Hire Me
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="ml-2 w-5 h-6"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+
+      <div className="flex flex-row gap-5 ml-auto">
+        <div className="hidden text-lg sm:flex items-center justify-end gap-5">
+          <a href="/about">About</a>
         </div>
-      </div>
-      <div className="flex grow items-center justify-end sm:hidden">
-        <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-violet-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-violet-600">
-          <span className="sr-only">Open Menu</span>
-          <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-        </Popover.Button>
+
+        <div className="hidden text-lg sm:flex items-center justify-end gap-5">
+          <a href="/schedule">Schedule</a>
+        </div>
+
+        <div className="hidden text-lg sm:flex items-center justify-end gap-5">
+          <a href="/contact">Contact</a>
+        </div>
       </div>
 
       <Popover.Panel
@@ -110,40 +59,6 @@ const Nav = () => {
                 >
                   About
                 </Link>
-                <Link
-                  to="blog"
-                  smooth={true}
-                  duration={500}
-                  className="focus:outline-none focus:ring-2 focus:ring-insert focus:ring-gray-500 px-2"
-                >
-                  Blog
-                </Link>
-                <Link
-                  to="work"
-                  smooth={true}
-                  duration={500}
-                  className="focus:outline-none focus:ring-2 focus:ring-insert focus:ring-gray-500 px-2"
-                >
-                  Work
-                </Link>
-                <button
-                  onClick={() => scroll.scrollToBottom()}
-                  className="hire-me flex w-18 rounded-lg transition hover:bg-violet-600 text-white font-semibold py-2 px-4 border border-gray-400  shadow"
-                >
-                  Hire Me
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="ml-2 w-5 h-6"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </button>
               </nav>
             </div>
           </div>
