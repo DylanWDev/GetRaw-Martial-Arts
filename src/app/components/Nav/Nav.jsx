@@ -14,11 +14,10 @@ const Nav = () => {
   const isCurrentPage = (href) => currentPath === href;
 
   return (
-    <Popover className="nav container text-black mx-auto flex items-center px-6 py-2 h-20 sticky top-0 z-50">
+    <Popover className="nav container text-white font-bold mx-auto flex items-center px-6 py-2 h-20 sticky top-0 z-50">
       <a href="/" className="size-20">
-        <img src="/images/logo.png"/>
+        <img src="/images/logo.png" alt="Logo Image and Home Navigation" />
       </a>
-
 
       <div className="flex flex-row gap-5 ml-auto">
         <div className="hidden text-lg sm:flex items-center justify-end gap-5">
