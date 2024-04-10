@@ -18,7 +18,7 @@ const Home = () => {
 
 const LandingContent = () => {
   return (
-    <div id="landing" className="relative" style={{ marginTop: "-.1rem" }}>
+    <div id="landing" className="relative" style={{ marginTop: "-.01rem" }}>
       <div className="text-white gap-5 flex flex-col h-screen justify-center items-center mx-4 sm:mx-12 md:mx-24 lg:mx-32 xl:mx-48 text-center">
         <h1 className="tracking-wide font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">GetRaw Martial Arts!</h1>
         <p className="tracking-wide text-sm sm:text-base md:text-lg lg:text-xl xl:text-1xl w-full lg:w-9/12">Welcome to Get Ready and Win Martial Arts! We specialize in using martial arts to develop essential life skills, aiming to equip you with the tools for success in every aspect of life. Rooted in Christian values, our academy emphasizes family, respect, and self-defense. Join us to unlock your full potential through martial arts discipline!</p>
