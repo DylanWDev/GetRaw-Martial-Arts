@@ -1,69 +1,41 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Popover } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import {  } from "@heroicons/react/24/solid";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Nav = () => {
   const [currentPath, setCurrentPath] = useState("");
 
   useEffect(() => {
+    // Defer initialization of currentPath until after component is mounted
     setCurrentPath(window.location.pathname);
   }, []);
 
   const isCurrentPage = (href) => currentPath === href;
 
   return (
-    <Popover className="nav  text-white font-bold mx-28 flex items-center px-6 py-2 h-20 sticky top-0 z-50">
-      <a href="/" className="size-20">
-        <img src="/images/logo.png" alt="Logo Image and Home Navigation" />
-      </a>
+    <>
+      <div className="nav container text-white mx-auto flex items-center justify-between px-6 py-2 h-20 sticky top-0 z-50">
+        <div className="flex items-center gap-5">
+          <a href="/" className="size-20">
+            <img src="/images/logo.png" alt="Logo Image and Home Navigation" />
+          </a>
+        </div>
 
-      <div className="flex flex-row gap-5 ml-auto">
         <div className="hidden text-lg sm:flex items-center justify-end gap-5">
           <a href="/about">About</a>
-        </div>
-
-        <div className="hidden text-lg sm:flex items-center justify-end gap-5">
           <a href="/schedule">Schedule</a>
-        </div>
-
-        <div className="hidden text-lg sm:flex items-center justify-end gap-5">
           <a href="/contact">Contact</a>
+          <button className="rounded-full bg-white p-1 shadow-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-black">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+          </button>
         </div>
       </div>
-
-      <Popover.Panel
-        focus
-        className="z-5 absolute right-0 left-auto top-0 origin-top-right transform transition md:hidden"
-      >
-        <div className=" rounded-lg p-5 bg-black shadow-lg ring-1 ring-black ring-opacity-5 divide-y-2 divide-gray-50">
-          <div clas4sName="px-5 pt-5 pb-6">
-            <div className="flex items-center justify-between">
-              <h1 className="font-bold mr-3">Close Menu</h1>
-              <div className="mr-2">
-                <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-violet-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-violet-600">
-                  <span className="sr-only">Close Menu</span>
-                  <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                </Popover.Button>
-              </div>
-            </div>
-            <div className="mt-6">
-              <nav className="grid gap-y-8">
-                <Link
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  className="focus:outline-none focus:ring-2 focus:ring-insert focus:ring-gray-500 px-2"
-                >
-                  About
-                </Link>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </Popover.Panel>
-    </Popover>
+    </>
   );
 };
 
