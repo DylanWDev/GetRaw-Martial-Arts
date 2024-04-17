@@ -31,7 +31,7 @@ const LandingContent = () => {
           self-defense. Join us to unlock your full potential through martial
           arts discipline!
         </p>
-        <button className=" tracking-widest font-bold rounded-full bg-red-700 p-2 w-48">
+        <button className="tracking-widest font-bold rounded-full bg-red-700 p-2 w-48 sm:w-60 md:w-72 lg:w-80 xl:w-80">
           GET STARTED
         </button>
       </div>
@@ -41,22 +41,22 @@ const LandingContent = () => {
 
 const PhilosophySection = () => {
   return (
-    <section className="py-12 px-12 bg-gray-100">
-      <div className="flex flex-col">
+    <section className="py-12 px-4 sm:px-12 bg-gray-100 flex justify-center">
+      <div className="flex flex-col items-center">
         <div className="flex flex-row items-center mb-6">
-          <hr className="border-2 border-red-600 w-48"></hr>
-          <h2 className="text-4xl font-bold relative mx-4">Our Philosophy</h2>
-          <hr className="border-2 border-red-600 w-48"></hr>
+          <hr className="border-2 border-red-600 w-12 sm:w-16"></hr>
+          <h2 className="text-2xl sm:text-3xl font-bold relative mx-4">Our Philosophy</h2>
+          <hr className="border-2 border-red-600 w-12 sm:w-16"></hr>
         </div>
-        <div>
-          <p className="text-lg mb-4">
+        <div className="max-w-4xl">
+          <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4">
             Our school is based on the principle of honor, respect, courtesy,
             accountability, and responsibility. We are not a win-at-all-cost
             school. We believe that mentality causes people to lose their honor,
             integrity, and character. Winning once by any means necessary can
             cause a lifetime of pain.
           </p>
-          <p className="text-lg mb-4">
+          <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4">
             We also do not believe people are entitled to anything except an
             opportunity to excel at life. This is not a program of instant
             gratification but of delayed gratification, discipline, and
@@ -69,7 +69,7 @@ const PhilosophySection = () => {
             child's best interest. We never have a committed child, we only have
             committed and disciplined parents.
           </p>
-          <p className="text-lg mb-4">
+          <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4">
             I know in today's society commitment is a dirty word and everyone
             wants an exit strategy. Instead of asking what if my child or I want
             to quit later, why not ask what if we don't? What if this is a
@@ -77,7 +77,7 @@ const PhilosophySection = () => {
             fellowship with other positive people, other people that love and
             care for us just the way we are.
           </p>
-          <p className="text-lg mb-4">
+          <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4">
             We believe in hard work, discipline, being kind, and having
             integrity. In order to be physically healthy, you must be mentally,
             emotionally, and spiritually healthy. They are all interconnected,
