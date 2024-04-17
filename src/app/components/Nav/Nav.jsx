@@ -19,7 +19,7 @@ const Nav = () => {
       <div className="nav container text-white mx-auto flex items-center justify-between px-6 py-2 h-20 sticky top-0 z-50">
         <div className="flex items-center gap-5">
           <a href="/" className="size-20">
-            <img src="/images/logo.png" alt="Logo Image and Home Navigation" />
+            <img src="/images/logo.webp" alt="Logo Image and Home Navigation" />
           </a>
         </div>
 
