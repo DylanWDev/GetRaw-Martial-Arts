@@ -10,6 +10,7 @@ const Home = () => {
         </div>
 
         <LandingContent />
+        <About />
         <PhilosophySection />
       </div>
     </>
@@ -44,9 +45,9 @@ const PhilosophySection = () => {
     <section className="py-12 px-4 sm:px-12 bg-gray-100 flex justify-center">
       <div className="flex flex-col items-center">
         <div className="flex flex-row items-center mb-6">
-          <hr className="border-2 border-red-600 w-12 sm:w-16"></hr>
+          <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
           <h2 className="text-2xl sm:text-3xl font-bold relative mx-4">Our Philosophy</h2>
-          <hr className="border-2 border-red-600 w-12 sm:w-16"></hr>
+          <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
         </div>
         <div className="max-w-4xl">
           <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4">
@@ -91,5 +92,34 @@ const PhilosophySection = () => {
     </section>
   );
 };
+
+
+const About = () => {
+  return (
+    <section className="py-12 px-4 sm:px-12 bg-gray-900">
+      <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center">
+        <div className="w-full sm:w-1/2 mb-8">
+          <div className="flex flex-col items-center sm:items-start">
+            <div className="flex flex-row items-center mb-6 text-white">
+              <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
+              <h2 className="text-2xl sm:text-3xl font-bold relative mx-4">Our Philosophy</h2>
+              <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
+            </div>
+            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4 text-white">
+            Welcome to Get Ready and Win Martial Arts! We specialize in using martial arts to develop essential life skills, aiming to equip you with the tools for success in every aspect of life. Rooted in Christian values, our academy emphasizes family, respect, and self-defense. Join us to unlock your full potential through martial arts discipline!
+            </p>
+            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4 text-white">
+              You can customize this component further by adding images, videos, or any other relevant content.
+            </p>
+          </div>
+        </div>
+        <div className="w-full sm:w-1/2">
+          <img src="images/kicking.webp" alt="About Us" className="w-full h-auto" style={{ filter: "brightness(0.1)" }} />
+        </div>
+      </div>
+    </section>
+  );
+};
+
 
 export default Home;
