@@ -42,14 +42,14 @@ const LandingContent = () => {
 
 const PhilosophySection = () => {
   return (
-    <section className="py-12 px-4 sm:px-12 bg-gray-100 flex justify-center">
+    <section className="py-12 px-4 sm:px-12 bg-gray-900 flex justify-center">
       <div className="flex flex-col items-center">
-        <div className="flex flex-row items-center mb-6">
+        <div className="flex flex-row items-center mb-6 text-white">
           <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
           <h2 className="text-2xl sm:text-3xl font-bold relative mx-4">Our Philosophy</h2>
           <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
         </div>
-        <div className="max-w-4xl">
+        <div className="max-w-4xl text-white">
           <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4">
             Our school is based on the principle of honor, respect, courtesy,
             accountability, and responsibility. We are not a win-at-all-cost
@@ -96,19 +96,19 @@ const PhilosophySection = () => {
 
 const About = () => {
   return (
-    <section className="py-12 px-4 sm:px-12 bg-gray-900">
+    <section className="py-12 px-4 sm:px-12 bg-gray-100 ">
       <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center">
         <div className="w-full sm:w-1/2 mb-8">
           <div className="flex flex-col items-center sm:items-start">
-            <div className="flex flex-row items-center mb-6 text-white">
+            <div className="flex flex-row items-center mb-6 text-black">
               <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
-              <h2 className="text-2xl sm:text-3xl font-bold relative mx-4">Our Philosophy</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold relative mx-4">About Us</h2>
               <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
             </div>
-            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4 text-white">
+            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4 text-black">
             Welcome to Get Ready and Win Martial Arts! We specialize in using martial arts to develop essential life skills, aiming to equip you with the tools for success in every aspect of life. Rooted in Christian values, our academy emphasizes family, respect, and self-defense. Join us to unlock your full potential through martial arts discipline!
             </p>
-            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4 text-white">
+            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-4 text-black">
               You can customize this component further by adding images, videos, or any other relevant content.
             </p>
           </div>
