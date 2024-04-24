@@ -70,3 +70,11 @@ html {
   background-color: rgba(0, 0, 0, 0.4); /* Adjust the color and opacity as needed */
   z-index: -1; /* Ensure the pseudo-element stays behind the content */
 }
+
+
+.custom-line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8; /* Adjust the number to your desired line clamp */
+  overflow: hidden;
+}
