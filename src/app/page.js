@@ -131,7 +131,7 @@ const About = () => {
   );
 };
 
-const Testimonials = ({ name, testimonial }) => {
+const Testimonials = () => {
   return (
     <section className="bg-white overflow-hidden shadow-lg py-16">
       <div className="flex justify-center pb-12 items-center">
@@ -141,13 +141,24 @@ const Testimonials = ({ name, testimonial }) => {
         </h2>
         <hr className="border-2 border-red-600 w-16 sm:w-24"></hr>
       </div>
-      <Card
-        name="Laura Wathen"
-        testimonial="Words can't truly express how proud we are of our kiddos and how grateful we are that Brian Chewning's Taekwondo is now part of our family's life. When it comes to Brian Chewning and Carrisa Chewning, all I can say is that I think God hides the wings of angels so we don't freak out when we meet them. These people are nothing short of inspirational!!! If anyone is seeking an activity for their kids that builds strength, stamina, skill, character, perseverance and RESPECT or are in search of a new resource for mental and physical health, fitness and, yes, fun for themselves, come check out Brian Chewning's Taekwondo!!"
-      />
+      <div className="p-12 flex flex-col sm:flex-row gap-10 justify-center items-center">
+        <Card
+          name="Laura Wathen"
+          testimonial="Words can't truly express how proud we are of our kiddos and how grateful we are that Brian Chewning's Taekwondo is now part of our family's life. When it comes to Brian Chewning and Carrisa Chewning, all I can say is that I think God hides the wings of angels so we don't freak out when we meet them. These people are nothing short of inspirational!!! If anyone is seeking an activity for their kids that builds strength, stamina, skill, character, perseverance and RESPECT or are in search of a new resource for mental and physical health, fitness and, yes, fun for themselves, come check out Brian Chewning's Taekwondo!!"
+        />
+        <Card
+          name="Laura Wathen"
+          testimonial="Words can't truly express how proud we are of our kiddos and how grateful we are that Brian Chewning's Taekwondo is now part of our family's life. When it comes to Brian Chewning and Carrisa Chewning, all I can say is that I think God hides the wings of angels so we don't freak out when we meet them. These people are nothing short of inspirational!!! If anyone is seeking an activity for their kids that builds strength, stamina, skill, character, perseverance and RESPECT or are in search of a new resource for mental and physical health, fitness and, yes, fun for themselves, come check out Brian Chewning's Taekwondo!!"
+        />
+        <Card
+          name="Laura Wathen"
+          testimonial="Words can't truly express how proud we are of our kiddos and how grateful we are that Brian Chewning's Taekwondo is now part of our family's life. When it comes to Brian Chewning and Carrisa Chewning, all I can say is that I think God hides the wings of angels so we don't freak out when we meet them. These people are nothing short of inspirational!!! If anyone is seeking an activity for their kids that builds strength, stamina, skill, character, perseverance and RESPECT or are in search of a new resource for mental and physical health, fitness and, yes, fun for themselves, come check out Brian Chewning's Taekwondo!!"
+        />
+      </div>
     </section>
   );
 };
+
 
 const Card = ({ name, testimonial }) => {
   return (
