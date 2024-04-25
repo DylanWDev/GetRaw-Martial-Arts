@@ -2,28 +2,32 @@ import Nav from "../components/Nav/Nav";
 
 export default function About() {
   return (
-    <div className="">
-      <div className="star-bg absolute star-container "></div>
-      <div className="absolute top-0 w-full">
-        <Nav />
+    <>
+      <div className="relative">
+        <div className="absolute top-0 w-full z-50">
+          <Nav />
+        </div>
+        <Filler />
       </div>
-
-      <p>Welcome to Brian Chewning's TaeKwonDo Academy/GetRAW Martial Arts! Since 1993, we've been dedicated to providing martial arts training that helps clients achieve fitness, confidence, and health. Rooted in Christian values, our school focuses on traditional TaeKwonDo and Self Defense, emphasizing our 7 tenets:
-
-Honor
-Courtesy
-Integrity
-Perseverance
-Self-Control
-Courage
-Community
-We're committed to helping you reach your fitness and martial arts goals, prioritizing high-quality service and client satisfaction. Our instructor team is dedicated to meeting your needs, resulting in a high percentage of repeat clients and referrals.
-
-We offer martial arts lessons 5 days a week for men, women, and children. Beginners as young as 4 and as young at heart as 65 are welcome! Additionally, we offer family martial arts classes once a week, providing the opportunity to train together towards black belt and beyond.
-
-We also offer discounts for college students, law enforcement personnel, and active military members with valid ID.
-
-We look forward to earning your trust and delivering the best martial arts service in the industry.</p>
-    </div>
+    </>
   );
 }
+
+const Filler = () => {
+  return (
+    <div id="landing" className="relative" style={{ marginTop: "-.01rem" }}>
+      <div className="text-white gap-5 flex flex-col h-screen justify-center items-center mx-4 sm:mx-12 md:mx-24 lg:mx-32 xl:mx-48 text-center">
+        <h1 className="tracking-wide font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+          GetRaw Martial Arts!
+        </h1>
+        <p className="tracking-wide text-sm sm:text-base md:text-lg lg:text-xl xl:text-1xl w-full lg:w-9/12">
+          Start Your Martial Arts Journey Today!
+        </p>
+        <button className="tracking-widest font-bold rounded-full bg-red-700 p-2 w-48 sm:w-60 md:w-72 lg:w-80 xl:w-80">
+          <a href="/contact">GET STARTED</a>
+        </button>
+      </div>
+    </div>
+  );
+};
+
