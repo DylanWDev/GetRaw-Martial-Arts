@@ -1,8 +1,5 @@
-"use client";
+"use client"
 import { useEffect, useState } from "react";
-import { Popover } from "@headlessui/react";
-import {  } from "@heroicons/react/24/solid";
-import { Link, animateScroll as scroll } from "react-scroll";
 
 const Nav = () => {
   const [currentPath, setCurrentPath] = useState("");
@@ -11,8 +8,6 @@ const Nav = () => {
     // Defer initialization of currentPath until after component is mounted
     setCurrentPath(window.location.pathname);
   }, []);
-
-  const isCurrentPage = (href) => currentPath === href;
 
   return (
     <>
