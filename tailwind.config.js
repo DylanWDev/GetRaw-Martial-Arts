@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        DarkBG: '#0C0B0B',
+        Gold: "#FFD700",
+        DarkerGold: "#dcbb00",
+        RaisinBlack: "#212121",
+        DarkCharcoal: "#2f2f2f",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
