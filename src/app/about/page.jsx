@@ -1,33 +1,44 @@
 import Nav from "../components/Nav/Nav";
+import Footer from "../components/Footer/Footer";
 
-export default function About() {
+const About = () => {
   return (
     <>
-      <div className="relative">
-        <div className="absolute top-0 w-full z-50">
+      <div className="w-full bg-DarkCharcoal">
           <Nav />
         </div>
-        <Filler />
-      </div>
-    </>
-  );
-}
-
-const Filler = () => {
-  return (
-    <div id="landing" className="relative" style={{ marginTop: "-.01rem" }}>
-      <div className="text-white gap-5 flex flex-col h-screen justify-center items-center mx-4 sm:mx-12 md:mx-24 lg:mx-32 xl:mx-48 text-center">
-        <h1 className="tracking-wide font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-          GetRaw Martial Arts!
-        </h1>
-        <p className="tracking-wide text-sm sm:text-base md:text-lg lg:text-xl xl:text-1xl w-full lg:w-9/12">
-          Start Your Martial Arts Journey Today!
+      <div className="container mx-auto px-4 py-8 h-screen">
+        <h1 className="text-3xl font-bold mb-4">About Brian Chewning's TaeKwonDo Academy/GetRAW Martial Arts</h1>
+        <p className="mb-4">
+          Since 1993, Brian Chewning's TaeKwonDo Academy/GetRAW Martial Arts has provided martial arts training to clients, helping them get and stay fit, active, confident, and healthy. We are a Christian-based martial arts school that focuses on teaching traditional TaeKwonDo and Self Defense. We train in martial arts while remaining focused on our 7 tenets:
         </p>
-        <button className="tracking-widest font-bold rounded-full bg-red-700 p-2 w-48 sm:w-60 md:w-72 lg:w-80 xl:w-80">
-          <a href="/contact">GET STARTED</a>
-        </button>
+        <ul className="list-disc list-inside mb-4">
+          <li>HONOR</li>
+          <li>COURTESY</li>
+          <li>INTEGRITY</li>
+          <li>PERSERVERANCE</li>
+          <li>SELF-CONTROL</li>
+          <li>COURAGE</li>
+          <li>COMMUNITY</li>
+        </ul>
+        <p className="mb-4">
+          We are here to help you reach all of your fitness and martial arts goals. We are focused on providing high-quality service and client satisfaction. Meeting the needs of our parents and students are of the utmost importance. Our entire instructor team is committed to meeting those needs. As a result, a high percentage of our business is from repeat clients and referrals.
+        </p>
+        <p className="mb-4">
+          We would welcome the opportunity to earn your trust and deliver you the best service in the industry.
+        </p>
+        <h2 className="text-xl font-bold mb-4">Classes and Offerings</h2>
+        <p className="mb-4">
+          We offer lessons 5 days a week to men, women, and children. We have beginners starting as young as 4 and as young at heart as 65! We offer family classes once a week with the opportunity to train and start your journey together to black belt and beyond.
+        </p>
+        <h2 className="text-xl font-bold mb-4">Discounts Available</h2>
+        <p className="mb-4">
+          College, Law Enforcement, and Active Military Discounts available with valid ID.
+        </p>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
+export default About;

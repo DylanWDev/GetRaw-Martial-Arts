@@ -32,7 +32,7 @@ export default function Contact() {
           <Nav />
         </div>
       </div>
-      <div className="flex-grow flex items-center justify-center h-screen bg-DarkCharcoal">
+      <div className="flex-grow flex items-center justify-center h-screen bg-white">
         <div className="py-8 w-full md:w-3/4 lg:w-1/2 xl:w-1/3 mb-24">
           <form
             onSubmit={handleSubmit}
@@ -49,7 +49,7 @@ export default function Contact() {
                 placeholder="Student's First Name"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 mt-1 focus:outline-none focus:border-blue-500"
+                className="w-full border border-gray-300 rounded-md px-3 py-2 mt-1 focus:outline-none focus:border-red-500"
                 required
               />
             </div>
@@ -61,7 +61,7 @@ export default function Contact() {
                 placeholder="Student's Last Name"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 mt-1 focus:outline-none focus:border-blue-500"
+                className="w-full border border-gray-300 rounded-md px-3 py-2 mt-1 focus:outline-none focus:border-red-500"
                 required
               />
             </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                 placeholder="Mobile Number"
                 value={formData.mobileNumber}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 mt-1 focus:outline-none focus:border-blue-500"
+                className="w-full border border-gray-300 rounded-md px-3 py-2 mt-1 focus:outline-none focus:border-red-500"
                 required
               />
             </div>
@@ -85,7 +85,7 @@ export default function Contact() {
                 placeholder="Email Address"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md px-3 py-2 mt-1 focus:outline-none focus:border-blue-500"
+                className="w-full border border-gray-300 rounded-md px-3 py-2 mt-1 focus:outline-none focus:border-red-500"
                 required
               />
             </div>

@@ -1,10 +1,11 @@
 import React from "react";
 import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
 
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="relative">
         <div className="absolute top-0 w-full z-50">
           <Nav />
         </div>
@@ -14,6 +15,7 @@ const Home = () => {
         <PhilosophySection />
         <Testimonials />
       </div>
+      <Footer />
     </>
   );
 };
