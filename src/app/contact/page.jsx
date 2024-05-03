@@ -39,6 +39,9 @@ export default function Contact() {
             className="mx-auto border border-black p-5 rounded-lg bg-white shadow-2xl shadow-black"
           >
             <div className="mb-4">
+              <h1 className="text-center font-bold text-2xl sm:text-2xl lg:text-3xl xl:text-4xl m-5">
+                Schedule your free class
+              </h1>
               <input
                 type="text"
                 id="firstName"
