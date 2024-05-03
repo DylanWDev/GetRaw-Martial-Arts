@@ -95,7 +95,7 @@ export default function Contact() {
             >
               Schedule My Free Class
             </button>
-            <p className="text-xs text-gray-400 p-1">
+            <p className="text-xs text-gray-400 pt-2">
               By opting into this webform you are giving consent for Brian
               Chewning's GetRaw Martial Arts to send you periodic text messages.
               Standard rates may apply. You may opt-out anytime by replying
