@@ -4,7 +4,7 @@ import Nav from "./components/Nav/Nav";
 const Home = () => {
   return (
     <>
-      <div>
+      <div className="relative">
         <div className="absolute top-0 w-full z-50">
           <Nav />
         </div>
